@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var arrayLength = prompt('Please enter no of elements');
+			var array = [];
+			// user defined length
+
+			for(var i = 0; i < arrayLength; i++)
+				array[i] = prompt('Please enter number: '+i);
+
+			document.write("Array is "+ array);
+			var i, j, k;
+			for(i=0;i<arrayLength;i++)
+				for(j=i+1;j<arrayLength;j++)
+	  				if(array[i]<array[j]) {
+	      				k=array[i];
+						array[i]=array[j];
+						array[j]=k;
+	  				}
+
+			document.write("<br/>After bubble sort in desending order " + array);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

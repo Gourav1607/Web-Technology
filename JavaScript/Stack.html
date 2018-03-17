@@ -1,0 +1,23 @@
+<html>
+<body>
+    <p>Push the element in array</p>
+    <input type="button" value="Push It!" onclick="Function()"></button>
+    <p>Pop the element in array</p>
+    <input type="button" value="Pop It!" onclick="Function2()"></button>
+    <p id="demo"></p>
+    <script>
+        var Letter = ["A","B","C","D"];
+        document.getElementById("demo").innerHTML=Letter;
+
+        function Function() {
+            Letter.push("E");
+            document.getElementById("demo").innerHTML=Letter;
+        }
+
+        function Function2() {
+            Letter.pop();
+            document.getElementById("demo").innerHTML = Letter;
+        }
+    </script>
+</body>
+</html>

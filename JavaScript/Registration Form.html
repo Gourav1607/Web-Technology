@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title> Question_1 JavaScript </title>
+	<script type="text/javascript">
+		function validation() {
+			var a=document.form.name.value;
+			if(!isNaN(a))
+				alert("Enter the String");
+			var b=document.form.roll.value;
+			str = b.toString(),
+			len = str.length;
+			if(isNaN(b) || b=="" || len>7 || len<7)
+				alert('Enter the 7 digit number');
+			var c=document.form.Date.value;
+			if(c=="")
+				alert("Enter the Date Of Birth");
+		}
+	</script>
+</head>
+<body>
+	<form name="form" method="post" onsubmit="validation()">
+		Full Name: <input type="text" placeholder="Enter your Name" name="name"><br><br>
+		Roll Number: <input type="text" placeholder="Enter the Roll number" name="roll"><br><br>
+		Date of Birth: <input type="date" name="Date">
+		<input type="submit">
+		<input type="reset">
+	</form>
+</body>
+</html>
